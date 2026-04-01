@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: order-service
-        image: ssbn2125@gmail.com/order-service:latest
+        image: ssbn2125320/order-service:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 3001
