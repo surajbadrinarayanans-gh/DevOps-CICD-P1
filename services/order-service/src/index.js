@@ -16,6 +16,10 @@ app.get('/orders', async (req, res) => {
     }
 });
 
+app.get('/metrics', async (req, res) => {
+    res.set('Content-Type', client.register.contentType);
+    res.end(await client.register.metrics());
+});
 app.listen(3001, () => {
     console.log("Order Service running on port 3001");
 });
